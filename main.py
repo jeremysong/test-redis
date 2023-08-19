@@ -17,7 +17,7 @@ if __name__ == "__main__":
         r.hset("11111111", mapping = {
             "111": "Updated value of 111"
         })
+
         print("Get key 111 for CID 11111111", r.hget("11111111", "111"))
         print("Get all keys for CID 11111111", r.hkeys("11111111"))
         print("Get all values for CID 11111111", r.hgetall("11111111"))
-
