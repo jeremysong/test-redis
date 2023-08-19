@@ -20,4 +20,6 @@ if __name__ == "__main__":
     })
     print("Get key 111 for CID 11111111", r.hget("11111111", "111"))
     print("Get all values for CID 11111111", r.hgetall("11111111"))
+    
+    r.close()
 
